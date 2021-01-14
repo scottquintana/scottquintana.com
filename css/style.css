@@ -91,7 +91,13 @@ h1, h2, h3 {
 }
 
 .app-img img {
-  max-width: 170px;
+  image-rendering: -moz-crisp-edges; 
+image-rendering: -o-crisp-edges; 
+image-rendering: -webkit-optimize-contrast; 
+/* image-rendering: crisp-edges; */
+/* -ms-interpolation-mode: nearest-neighbor; IE (non-standard property) */
+  max-width: 200px;
+  height: auto;
 }
 
 #cartflow {
