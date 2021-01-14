@@ -24,7 +24,11 @@ h1, h2, h3 {
   text-align: center;
   padding: 0px;
   margin: 0px;
-  /* flex: 1; */
+  flex: 1;
+}
+
+.reversed {
+  flex-direction: row-reverse;
 }
 
 .hero {
@@ -92,10 +96,10 @@ h1, h2, h3 {
 
 .app-img img {
   image-rendering: -moz-crisp-edges; 
-image-rendering: -o-crisp-edges; 
-image-rendering: -webkit-optimize-contrast; 
-/* image-rendering: crisp-edges; */
-/* -ms-interpolation-mode: nearest-neighbor; IE (non-standard property) */
+  image-rendering: -o-crisp-edges; 
+  image-rendering: -webkit-optimize-contrast; 
+  /* image-rendering: crisp-edges; */
+  /* -ms-interpolation-mode: nearest-neighbor; IE (non-standard property) */
   max-width: 200px;
   height: auto;
 }
@@ -147,4 +151,34 @@ image-rendering: -webkit-optimize-contrast;
 
 #topheadlines p {
   color: #F0E7D8;
+}
+
+@media(max-width: 768px) {
+  /* .navbar {
+      flex-direction: column;
+      height: 120px;
+      padding: 20px;
+  }
+
+  .navbar a {
+      padding: 10px 10px;
+      margin: 0 3px;
+  } */
+
+  .flex-container {
+      flex-direction: column;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .flex-columns .column, .flex-grid .column {
+      flex: 100%;
+      max-width: 100%;
+  }
+
+  .app-img img {
+      width: 40%;
+  }
 }
