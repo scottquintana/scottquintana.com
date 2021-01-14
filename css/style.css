@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Judson', sans-serif;
+  background: #F0E7D8;
+  color: #141115;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.flex-container {
+  display: flex;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  /* flex: 1; */
+}
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+}
+
+.hero-content p {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+.hero-img {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  
+}
+
+.app-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.app-img {
+  padding: 10px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.app-desc p {
+  font-size: 14px;
+  line-height: 90%;
+  font-weight: 200;
+}
+
+.app img {
+  max-width: 170px;
+}
+
+#cartflow {
+  background-color: #735B63;
+}
+
+#cartflow h2 {
+  color: white;
+  
+}
+
+#cartflow p{
+  color: #F0E7D8;
+}
+
+#activedispatch {
+  background: #4F4C7B;
+}
+
+#activedispatch h2 {
+  color: white;
+}
+
+#activedispatch p {
+  color: #F0E7D8;
+}
+
+#weatherapp {
+  background: #141115;
+}
+
+#weatherapp h2 {
+  color: white;
+}
+
+#weatherapp p {
+  color: #F0E7D8;
+}
+
+#topheadlines {
+  background: #465F68;
+}
+
+#topheadlines h2 {
+  color: white;
+}
+
+#topheadlines p {
+  color: #F0E7D8;
+}
