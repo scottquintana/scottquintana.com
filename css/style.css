@@ -43,6 +43,10 @@ h1, h2, h3 {
   /* background-color: crimson; */
 }
 
+.hero-content h3 {
+  color: #223F57;
+}
+
 .hero img {
   image-rendering: -moz-crisp-edges; 
   image-rendering: -o-crisp-edges; 
@@ -50,6 +54,7 @@ h1, h2, h3 {
   /* image-rendering: crisp-edges; */
   /* -ms-interpolation-mode: nearest-neighbor; IE (non-standard property) */
   max-width: 500px;
+  width: 140%;
   height: auto;
 }
 
@@ -79,7 +84,7 @@ h1, h2, h3 {
   padding: 30px;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .app {
@@ -109,7 +114,7 @@ h1, h2, h3 {
 
 .app-desc p {
   font-size: 14px;
-  line-height: 90%;
+  line-height: 1.1;
   font-weight: 200;
 }
 
@@ -124,7 +129,8 @@ h1, h2, h3 {
 }
 
 #cartflow {
-  background-color: #735B63;
+  background: #885a5a;
+  /* background-color: #735B63; */
 }
 
 #cartflow h2 {
