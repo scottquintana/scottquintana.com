@@ -8,7 +8,8 @@
 
 body {
   font-family: 'Judson', sans-serif;
-  background: #F0E7D8;
+  background: #C6BE65;
+  /* background: #F0E7D8; */
   color: #141115;
   line-height: 1.6;
 }
@@ -39,17 +40,30 @@ h1, h2, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: crimson; */
+}
 
+.hero img {
+  image-rendering: -moz-crisp-edges; 
+  image-rendering: -o-crisp-edges; 
+  image-rendering: -webkit-optimize-contrast; 
+  /* image-rendering: crisp-edges; */
+  /* -ms-interpolation-mode: nearest-neighbor; IE (non-standard property) */
+  max-width: 500px;
+  height: auto;
 }
 
 .hero-content {
   display: flex;
+  /* background: cornflowerblue; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
+  padding: 30px;
+  margin: 30px;
   flex: 1;
+  max-width: 500px;
 }
 
 .hero-content p {
@@ -59,10 +73,13 @@ h1, h2, h3 {
 }
 
 .hero-img {
+  /* background-color: darkblue; */
   display: flex;
   flex: 1;
+  padding: 30px;
   justify-content: center;
   align-items: center;
+  max-width: 500px;
 }
 
 .app {
