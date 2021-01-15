@@ -197,6 +197,10 @@ h1, h2, h3 {
       max-width: 100%;
   }
 
+  .hero-img img {
+    width: 40%;
+  }
+  
   .app-img img {
       width: 40%;
   }
