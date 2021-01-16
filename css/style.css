@@ -38,8 +38,9 @@ h1, h2, h3 {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  overflow: hidden;
   /* background-color: crimson; */
 }
 
@@ -79,6 +80,7 @@ h1, h2, h3 {
 
 .hero-img {
   /* background-color: darkblue; */
+  
   display: flex;
   flex: 1;
   padding: 30px;
@@ -167,7 +169,8 @@ h1, h2, h3 {
 }
 
 #topheadlines {
-  background: #465F68;
+  background: #6D696A;
+  /* background: #465F68; */
 }
 
 #topheadlines h2 {
