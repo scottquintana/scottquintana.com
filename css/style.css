@@ -65,9 +65,8 @@ h1, h2, h3 {
 
 .hero-content {
   display: flex;
-  background: grey;
-  border-radius: 24px;
-  opacity: 0.5;
+  /* background: grey; */
+  /* border-radius: 24px; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
