@@ -44,7 +44,11 @@ h1, h2, h3 {
   /* background-color: crimson; */
 }
 
+.hero-content h1 {
+  font-size: 48px;
+}
 .hero-content h3 {
+  font-size: 24px;
   color: #223F57;
 }
 
@@ -61,7 +65,9 @@ h1, h2, h3 {
 
 .hero-content {
   display: flex;
-  /* background: cornflowerblue; */
+  background: grey;
+  border-radius: 24px;
+  opacity: 0.5;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -73,7 +79,7 @@ h1, h2, h3 {
 }
 
 .hero-content p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.2;
   font-weight: 200;
 }
