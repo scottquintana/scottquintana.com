@@ -266,6 +266,20 @@ a:hover {
     flex-direction: column;
   }
 
+  .hero-content {
+    display: flex;
+    /* background: grey; */
+    /* border-radius: 24px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    max-width: 500px;
+  }
+
   .flex-columns .column, .flex-grid .column {
       flex: 100%;
       max-width: 100%;
