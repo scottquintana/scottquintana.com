@@ -254,6 +254,10 @@ a:hover {
     color: #223F57;
   }
 
+  .hero-content p {
+    font-size: 14px;
+  }
+
   .flex-container {
       flex-direction: column;
   }
