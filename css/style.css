@@ -46,7 +46,9 @@ a:hover {
 .hero {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+  min-height: 100vh;
+  /* min-height: -webkit-fill-available; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -245,6 +247,18 @@ a:hover {
       padding: 10px 10px;
       margin: 0 3px;
   } */
+  .hero {
+    position: relative;
+    width: 100vw;
+    /* height: 100vh; */
+    min-height: 100vh;
+    /* min-height: -webkit-fill-available; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: crimson; */
+  }
 
   .hero-content h1 {
     font-size: 24px;
