@@ -289,6 +289,11 @@ a:hover {
       max-width: 100%;
   }
 
+  .hero-img {
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: top;
+  }
   .hero-img img {
     width: 70%;
   }
