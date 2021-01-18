@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel = "icon" href ="favicon.png"  type = "image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://use.fontawesome.com/d2e6984ca1.js"></script>
   <title>Scott Quintana</title>
 </head>
 
@@ -14,103 +15,155 @@
     <!-- NAVBAR -->
     <div class="hero">
       <div class="hero-container">
-      <div class="hero-content">
-        <h1>Scott Quintana</h1>
-        <h3>iOS Developer · Drummer/Producer</h3>
-        <br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni possimus rerum quidem, sapiente cum, sed amet placeat similique repellendus, id at quam expedita ab totam! Debitis eligendi molestias delectus fugit nihil eos non deleniti soluta sequi, quidem optio expedita! Corporis mollitia facere, eligendi architecto cum voluptas temporibus impedit amet modi iste totam voluptatum, quas deleniti voluptatem unde ullam voluptate dolorum?</p>
-        <br><br><br>
-        <p><a class="navlink" href="#portfolio">Portfolio</a>  · GitHub · Email · LinkedIn · Instagram</p>
+        <div class="hero-content">
+          <h1>Scott Quintana</h1>
+          <h3>iOS Developer · Drummer/Producer</h3>
+          <br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni possimus rerum quidem, sapiente cum, sed
+            amet placeat similique repellendus, id at quam expedita ab totam! Debitis eligendi molestias delectus fugit
+            nihil eos non deleniti soluta sequi, quidem optio expedita! Corporis mollitia facere, eligendi architecto
+            cum voluptas temporibus impedit amet modi iste totam voluptatum, quas deleniti voluptatem unde ullam
+            voluptate dolorum?</p>
+          <br><br><br>
+          <p>
+            <ul class="hero-links">
+              <li class="hero-link-btn"><a class="hero-link" href="#portfolio">Portfolio</a></li>
+              <li class="hero-link-btn"><a class="hero-link" href="#contact">Contact me</a></li>
+            </ul>
+             </p>
+        </div>
+        <div class="hero-img">
+          <img src="img/me.png" alt="">
+        </div>
       </div>
-      <div class="hero-img">
-        <img src="img/me.png" alt="">
-      </div>
-    </div>
     </div>
   </header>
   <main>
     <section id="about">
       <!-- About me -->
     </section>
-   
+
     <!-- Apps -->
     <section id="apps">
       <div class="section-header" id="portfolio">
         <h1>Portfolio</h1>
       </div>
       <div class="apps-container">
-      <div class="flex-container" id="cartflow">
-        <div class="app app-desc">
-          <h2>Cart Flow</h2>
-          <br>
-          <p>Cart Flow was born out of a personal need for efficiency in grocery shopping in the time of COVID. This app
-            was developed specifically in mind to add both custom items to your list and the assigned aisles each
-            product can be found in. By listing items by aisle, you can spend less time trying to find each item and
-            less time in the grocery store. This app utilizes Core Data and Diffable Data Sources.
-          </p><br>
-          <p>Role: Developer & designer</p><br>
-          <p>Technologies used: Core Data</p>
+        <div class="flex-container" id="cartflow">
+          <div class="app app-desc">
+            <h2>Cart Flow</h2>
+            <br>
+            <p>Cart Flow was born out of a personal need for efficiency in grocery shopping in the time of COVID. This
+              app
+              was developed specifically in mind to add both custom items to your list and the assigned aisles each
+              product can be found in. By listing items by aisle, you can spend less time trying to find each item and
+              less time in the grocery store. This app utilizes Core Data and Diffable Data Sources.
+            </p><br>
+            <p>Role: Developer & designer</p><br>
+            <p>Technologies used: Core Data</p>
+            <div class="app-badge-container">
+              
+              <a href="https://github.com/scottquintana/CartFlow" target="_blank" class="app-badge github-badge"><i class="fa fa-github fa-lg"
+                  aria-hidden="true"></i> &nbsp; View on GitHub</a>
+            </div>
+          </div>
+          <div class="app app-img">
+            <img class="screenshot" src="img/screenshots/cartflow1.png">
+          </div>
         </div>
-        <div class="app app-img">
-          <img class="screenshot" src="img/screenshots/cartflow1.png">
+
+        <div class="flex-container reversed" id="activedispatch">
+          <div class="app app-desc">
+            <h2>Active Dispatch</h2>
+            <br>
+            <p>
+              Active Dispatch connects you to the Metro Nashville Police Department via their public API and displays
+              all
+              active police calls. The active calls are viewable in a list and via a map view. The individual incidents
+              are assigned a color, depending on their category and threat level. When using the map view, clicking on
+              the
+              individual incidents offers a specific location and more information. Active Dispatch utilizes UIKit,
+              however, the inspiration came through some recent SwiftUI projects (programmatic UI, gradients, reactive
+              color changes, and the MVVM architecture).
+            </p><br>
+            <p><b>Role:</b> Developer & designer</p><br>
+            <p>Technologies used: MapKit, Core Location</p>
+            <div class="app-badge-container">
+              <a class="app-badges appstore-badge"
+                href="https://apps.apple.com/us/app/nashville-active-dispatch/id1549306527?itsct=apps_box&amp;itscg=30200" target="_blank">
+                <img src="img/appstore.svg" alt="Download on the App Store">
+              </a>
+              <a href="https://github.com/scottquintana/NashvilleActiveDispatch" target="_blank" class="app-badges github-badge"><i class="fa fa-github fa-lg"
+                  aria-hidden="true"></i> &nbsp; View on GitHub</a>
+            </div>
+          </div>
+          <div class="app app-img">
+            <img class="screenshot" src="img/screenshots/activedispatch1.png">
+          </div>
+        </div>
+
+        <div class="flex-container" id="weatherapp">
+          <div class="app app-desc">
+            <h2>WeatherApp</h2>
+            <br>
+            <p>WeatherApp was my excuse to use a combination of technologies that I really enjoy: SwiftUI and Combine.
+              Having a UI that could quickly react to whatever data might be coming it's way was easy to implement with
+              this pairing, and with Core Location being integrated too, there is no setup involed. You simply open the
+              app, it detects where you are, and gives you the corresponding weather. Once finished with the main app, I
+              thought it would be fun to make a widget to go along with it, allowing you to see your hourly forecast
+              whenever you look at your home screen.
+
+            </p><br>
+            <p><b>Role:</b> Developer & designer</p><br>
+            <p>Technologies used: SwiftUI, Combine, WidgetKit, Core Location</p>
+            <div class="app-badge-container">
+              
+              <a href="https://github.com/scottquintana/WeatherApp-SwiftUI" target="_blank" class="app-badge github-badge"><i class="fa fa-github fa-lg"
+                  aria-hidden="true"></i> &nbsp; View on GitHub</a>
+            </div>
+          </div>
+          <div class="app app-img">
+            <img class="screenshot" src="img/screenshots/weatherapp1.png">
+          </div>
+        </div>
+
+        <div class="flex-container reversed" id="topheadlines">
+          <div class="app app-desc">
+            <h2>Top Headlines</h2>
+            <br>
+            <p>Top Headlines simplifies the news experience by showing you one story at a time, similarly to dating
+              apps. Dependent on the users’ interest in the headline, they can use the buttons on the bottom of the UI
+              or a swipe gesture to add to their reading list or pass the story. Once the feed of headlines has been
+              exhausted, you can switch to your list, read each article, and check them off as you go.
+            </p><br>
+            <p><b>Role:</b> Developer & designer</p><br>
+            <p>Technologies used: UIGestureRecognizer</p>
+            <div class="app-badge-container">
+              
+              <a href="https://github.com/scottquintana/TopHeadlines" target="_blank" class="app-badge github-badge"><i class="fa fa-github fa-lg"
+                  aria-hidden="true"></i> &nbsp; View on GitHub</a>
+            </div>
+          </div>
+          <div class="app app-img">
+            <img class="screenshot" src="img/screenshots/topheadlines1.png">
+          </div>
         </div>
       </div>
-
-      <div class="flex-container reversed" id="activedispatch">
-        <div class="app app-desc">
-          <h2>Active Dispatch</h2>
-          <br>
-          <p>
-            Active Dispatch connects you to the Metro Nashville Police Department via their public API and displays all
-            active police calls. The active calls are viewable in a list and via a map view. The individual incidents
-            are assigned a color, depending on their category and threat level. When using the map view, clicking on the
-            individual incidents offers a specific location and more information. Active Dispatch utilizes UIKit,
-            however, the inspiration came through some recent SwiftUI projects (programmatic UI, gradients, reactive
-            color changes, and the MVVM architecture).
-          </p><br>
-          <p><b>Role:</b> Developer & designer</p><br>
-          <p>Technologies used: MapKit, Core Location</p>
-        </div>
-        <div class="app app-img">
-          <img class="screenshot" src="img/screenshots/activedispatch1.png">
-        </div>
-      </div>
-
-      <div class="flex-container" id="weatherapp">
-        <div class="app app-desc">
-          <h2>WeatherApp</h2>
-          <br>
-          <p>WeatherApp was my excuse to use a combination of technologies that I really enjoy: SwiftUI and Combine.
-            Having a UI that could quickly react to whatever data might be coming it's way was easy to implement with
-            this pairing, and with Core Location being integrated too, there is no setup involed. You simply open the
-            app, it detects where you are, and gives you the corresponding weather. Once finished with the main app, I
-            thought it would be fun to make a widget to go along with it, allowing you to see your hourly forecast
-            whenever you look at your home screen.
-
-          </p><br>
-          <p><b>Role:</b> Developer & designer</p><br>
-          <p>Technologies used: SwiftUI, Combine, WidgetKit, Core Location</p>
-        </div>
-        <div class="app app-img">
-          <img class="screenshot" src="img/screenshots/weatherapp1.png">
-        </div>
-      </div>
-
-      <div class="flex-container reversed" id="topheadlines">
-        <div class="app app-desc">
-          <h2>Top Headlines</h2>
-          <br>
-          <p>Top Headlines simplifies the news experience by showing you one story at a time, similarly to dating apps. Dependent on the users’ interest in the headline, they can use the buttons on the bottom of the UI or a swipe gesture to add to their reading list or pass the story. Once the feed of headlines has been exhausted, you can switch to your list, read each article, and check them off as you go.
-          </p><br>
-          <p><b>Role:</b> Developer & designer</p><br>
-          <p>Technologies used: UIGestureRecognizer</p>
-        </div>
-        <div class="app app-img">
-          <img class="screenshot" src="img/screenshots/topheadlines1.png">
-        </div>
-      </div>
-    </div>
     </section>
+    <section>
+      <div class="section-header" id="contact">
+        <h1>Contact</h1>
+      </div>
+      <div class="flex-container">
+        <div class="contact">
+          <ul class="contact-links">
+            <li class="contact-link" id="email-link"><a href="mailto:dev@scottquintana.com" class="contact-btn"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+            <li class="contact-link"><a href="https://github.com/scottquintana" class="contact-btn" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+            <li class="contact-link"><a href="https://www.linkedin.com/in/scottquintana/" class="contact-btn" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+            <li class="contact-link"><a href="https://www.instagram.com/scottquintana/" class="contact-btn" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+         </ul>
+        </div>
+      </div>
   </main>
   <script src="js/index.js"></script>
 </body>

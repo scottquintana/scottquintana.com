@@ -73,12 +73,32 @@ a:hover {
   color: #223F57;
 }
 
+.hero-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+
+.hero-link-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-link-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background: black;
+  border-radius: 20px;
+}
+
 .hero img {
   image-rendering: -moz-crisp-edges; 
   image-rendering: -o-crisp-edges; 
   image-rendering: -webkit-optimize-contrast; 
-  /* image-rendering: crisp-edges; */
-  /* -ms-interpolation-mode: nearest-neighbor; IE (non-standard property) */
   max-width: 700px;
   width: 100%;
   height: auto;
@@ -105,12 +125,10 @@ a:hover {
 }
 
 .navlink {
-  text-decoration: 0;
+  text-decoration: none;
 }
 
 .hero-img {
-  /* background-color: darkblue; */
-  
   display: flex;
   flex: 1;
   padding: 30px;
@@ -161,7 +179,7 @@ a:hover {
   font-size: 26px;
 }
 .app-desc p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.1;
   font-weight: 200;
 }
@@ -174,6 +192,91 @@ a:hover {
   /* -ms-interpolation-mode: nearest-neighbor; IE (non-standard property) */
   max-width: 200px;
   height: auto;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 200px;
+  /* background: black; */
+  background: #223F57;
+  padding: 20px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 70%;
+}
+
+.contact-link {
+  display: flex;
+  background: black;
+  width: 80px;
+  height: 80px;
+  padding: 30px 30px;
+  border-radius: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #F0E7D8;
+  /* box-shadow: 0px 2px #888888; */
+}
+
+.contact-link a {
+  color: #F0E7D8;
+  transition: transform 1s;
+}
+
+.contact-link a:hover {
+  color: white;
+}
+
+.appstore-badge {
+  display: flex;
+  justify-content: center;
+
+}
+.app-badge-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.appstore-badge img {
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.github-badge {
+  
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background: black;
+  max-width: 200px;
+  border: 1;
+  border-radius: 20px; 
+  justify-content: center;
+}
+
+.app-badge-container a {
+  text-decoration: none;
+}
+
+.app-badge {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .pinToTop + .apps-container {
@@ -237,16 +340,7 @@ a:hover {
 }
 
 @media(max-width: 768px) {
-  /* .navbar {
-      flex-direction: column;
-      height: 120px;
-      padding: 20px;
-  }
 
-  .navbar a {
-      padding: 10px 10px;
-      margin: 0 3px;
-  } */
   .hero {
     position: relative;
     width: 100vw;
@@ -298,9 +392,12 @@ a:hover {
     max-width: 500px;
   }
 
-  .flex-columns .column, .flex-grid .column {
-      flex: 100%;
-      max-width: 100%;
+  .contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 100%;
   }
 
   .hero-img {

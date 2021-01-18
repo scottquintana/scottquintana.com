@@ -4,10 +4,10 @@ const portfolio = document.getElementById('portfolio');
 const navTop = portfolio.offsetTop;
 
 
-document.querySelector('.navlink').addEventListener('click', function (e) {
+document.querySelector('.hero-links').addEventListener('click', function (e) {
   e.preventDefault();
 
-  if (e.target.classList.contains('navlink')) {
+  if (e.target.classList.contains('hero-link')) {
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
