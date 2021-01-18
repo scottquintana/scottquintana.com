@@ -106,8 +106,6 @@ a:hover {
 
 .hero-content {
   display: flex;
-  /* background: grey; */
-  /* border-radius: 24px; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -150,7 +148,6 @@ a:hover {
 }
 
 .app {
-  /* background: coral; */
   display: flex;
   padding: 10px;
   text-align: center;
@@ -188,50 +185,8 @@ a:hover {
   image-rendering: -moz-crisp-edges; 
   image-rendering: -o-crisp-edges; 
   image-rendering: -webkit-optimize-contrast; 
-  /* image-rendering: crisp-edges; */
-  /* -ms-interpolation-mode: nearest-neighbor; IE (non-standard property) */
   max-width: 200px;
   height: auto;
-}
-
-.contact {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  min-height: 200px;
-  /* background: black; */
-  background: #223F57;
-  padding: 20px;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-  width: 70%;
-}
-
-.contact-link {
-  display: flex;
-  background: black;
-  width: 80px;
-  height: 80px;
-  padding: 30px 30px;
-  border-radius: 50%;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #F0E7D8;
-  /* box-shadow: 0px 2px #888888; */
-}
-
-.contact-link a {
-  color: #F0E7D8;
-  transition: transform 1s;
-}
-
-.contact-link a:hover {
-  color: white;
 }
 
 .appstore-badge {
@@ -277,6 +232,44 @@ a:hover {
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 200px;
+  background: #223F57;
+  padding: 20px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 70%;
+}
+
+.contact-link {
+  display: flex;
+  background: black;
+  width: 80px;
+  height: 80px;
+  padding: 30px 30px;
+  border-radius: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #F0E7D8;
+}
+
+.contact-link a {
+  color: #F0E7D8;
+  transition: transform 1s;
+}
+
+.contact-link a:hover {
+  color: white;
 }
 
 .pinToTop + .apps-container {
@@ -380,8 +373,6 @@ a:hover {
 
   .hero-content {
     display: flex;
-    /* background: grey; */
-    /* border-radius: 24px; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -390,6 +381,15 @@ a:hover {
     margin: 10px;
     flex: 1;
     max-width: 500px;
+  }
+
+  .app-badge-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
 
   .contact-links {
