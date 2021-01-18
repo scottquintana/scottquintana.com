@@ -72,7 +72,7 @@ a:hover {
   color: #223F57;
 }
 
-.hero-links {
+.nav-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -121,9 +121,9 @@ a:hover {
   font-weight: 200;
 }
 
-.navlink {
+/* .navlink {
   text-decoration: none;
-}
+} */
 
 .hero-img {
   display: flex;
@@ -138,14 +138,31 @@ a:hover {
   display: flex;
   background: black;
   color: white;
-  padding: 0px;
+  padding: 20px;
+  margin: 0;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 60px;
 }
 
+.nav-home-btn {
+  color: #F0E7D8;
+  display: flex;
+  float: left;
+  justify-content: space-evenly;
+  text-align: left;
+  -webkit-transition: opacity 0.5s ease-in-out;
+       -moz-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
+         -o-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+}
+
+.nav-home-btn a {
+  color: #F0E7D8;
+}
 .app {
   display: flex;
   padding: 10px;
@@ -250,6 +267,10 @@ a:hover {
   width: 70%;
 }
 
+.contact-links a {
+  text-decoration: none;
+}
+
 .contact-link {
   display: flex;
   background: black;
@@ -262,13 +283,10 @@ a:hover {
   color: #F0E7D8;
 }
 
-.contact-link a {
-  color: #F0E7D8;
-  transition: transform 1s;
-}
-
-.contact-link a:hover {
+.contact-link:hover {
   color: white;
+  transition: transform 1s;
+  text-decoration: none;
 }
 
 .pinToTop + .apps-container {
@@ -278,6 +296,17 @@ a:hover {
 .pinToTop {
   position: fixed;
   top: 0;
+}
+
+.hidden {
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+   -ms-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+       transition: opacity 0.5s ease-in;
+  visibility: hidden;
+  opacity: 0;
+
 }
 
 #cartflow {
@@ -351,7 +380,7 @@ a:hover {
   }
 
   .hero-content h1 {
-    font-size: 24px;
+    font-size: 32px;
   }
   .hero-content h3 {
     font-size: 16px;
