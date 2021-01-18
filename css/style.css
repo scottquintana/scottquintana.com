@@ -147,6 +147,12 @@ a:hover {
   height: 60px;
 }
 
+.section-header h1 {
+  float:none;
+  text-align: center;
+  justify-content: center;
+}
+
 .nav-home-btn {
   color: #F0E7D8;
   display: flex;
@@ -374,7 +380,7 @@ a:hover {
   }
   .hero-content {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
   }
 
@@ -402,7 +408,7 @@ a:hover {
   .hero-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .hero-content {
