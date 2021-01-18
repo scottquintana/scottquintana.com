@@ -365,12 +365,11 @@ a:hover {
   .hero {
     position: relative;
     width: 100vw;
-    /* height: 100vh; */
     min-height: 100vh;
     /* min-height: -webkit-fill-available; */
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     overflow: hidden;
   }
   .hero-content {
@@ -397,10 +396,13 @@ a:hover {
 
   .hero {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .hero-container {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .hero-content {
