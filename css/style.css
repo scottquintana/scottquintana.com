@@ -344,7 +344,10 @@ a:hover {
     align-items: flex-start;
     overflow: hidden;
   }
-  .hero-content
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
 
   .hero-content h1 {
     font-size: 24px;
