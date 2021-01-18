@@ -347,6 +347,7 @@ a:hover {
   .hero-content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .hero-content h1 {
