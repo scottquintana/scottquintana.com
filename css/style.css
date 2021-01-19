@@ -94,6 +94,10 @@ a:hover {
   border-radius: 20px;
 }
 
+.hero-link-btn:hover {
+  background: #E85F5C;
+  transition: transform 0.2s;
+}
 .hero img {
   image-rendering: -moz-crisp-edges; 
   image-rendering: -o-crisp-edges; 
@@ -116,7 +120,7 @@ a:hover {
 }
 
 .hero-content p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.2;
   font-weight: 200;
 }
@@ -128,7 +132,7 @@ a:hover {
 .hero-img {
   display: flex;
   flex: 1;
-  padding: 30px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   max-width: 600px;
@@ -232,7 +236,6 @@ a:hover {
 }
 
 .github-badge {
-  
   cursor: pointer;
   display: inline-block;
   padding: 10px 30px;
@@ -291,7 +294,7 @@ a:hover {
 
 .contact-link:hover {
   color: white;
-  transition: transform 1s;
+ 
   text-decoration: none;
 }
 
