@@ -120,14 +120,10 @@ a:hover {
 }
 
 .hero-content p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 200;
 }
-
-/* .navlink {
-  text-decoration: none;
-} */
 
 .hero-img {
   display: flex;
@@ -164,10 +160,10 @@ a:hover {
   justify-content: space-evenly;
   text-align: left;
   -webkit-transition: opacity 0.5s ease-in-out;
-       -moz-transition: opacity 0.5s ease-in-out;
-        -ms-transition: opacity 0.5s ease-in-out;
-         -o-transition: opacity 0.5s ease-in-out;
-            transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .nav-home-btn a {
@@ -313,8 +309,9 @@ a:hover {
    -ms-transition: opacity 0.5s ease-in;
     -o-transition: opacity 0.5s ease-in;
        transition: opacity 0.5s ease-in;
-  visibility: hidden;
+  
   opacity: 0;
+  /* visibility: hidden; */
 
 }
 
@@ -383,13 +380,13 @@ a:hover {
   }
   .hero-content {
     display: flex;
-    /* flex-direction: column; */
     align-items: flex-start;
   }
 
   .hero-content h1 {
     font-size: 32px;
   }
+
   .hero-content h3 {
     font-size: 16px;
     color: #223F57;
