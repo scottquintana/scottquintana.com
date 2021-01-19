@@ -1,7 +1,8 @@
 'use_strict';
 
 const portfolio = document.getElementById('portfolio');
-const homeButton = document.querySelector('.home-link')
+const homeLink = document.querySelector('.home-link');
+const homeButton = document.querySelector('.nav-home-btn');
 const heroTop = document.querySelector('#hero-top');
 const navTop = portfolio.offsetTop;
 
@@ -15,9 +16,8 @@ document.querySelector('.nav-links').addEventListener('click', function (e) {
   }
 });
 
-homeButton.addEventListener('click', function (e) {
+homeLink.addEventListener('click', function (e) {
   e.preventDefault();
-  console.log('clicked');
   heroTop.scrollIntoView({ behavior: 'smooth'});
 });
 
